@@ -18,7 +18,7 @@ from datetime import datetime, timezone
     author="Qwe(N)", # 插件作者
     desc="一个用于鉴定用户今日欧非指数和悲剧指数的插件，可直接通过关键词触发，限制每日每个群/私聊一次，并随机添加表情。", # 插件描述
     version="1.0.0", # 插件版本
-    # repo="https://github.com/YourName/astrbot_plugin_oufei_jianding" # 如果有仓库地址，可以取消注释并填写
+    repo="https://github.com/YourName/astrbot_plugin_oufei_jianding"
 )
 class OuFeiJianDingPlugin(Star):
     """
@@ -146,3 +146,6 @@ class OuFeiJianDingPlugin(Star):
             yield event.plain_result(reply_message)
             # 发送消息后，可以选择停止事件传播，防止其他插件或默认 LLM 处理
             event.stop_event() # 可选：阻止后续处理
+
+
+#本插件由Qwen3-Coder编写
