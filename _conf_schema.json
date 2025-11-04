@@ -1,0 +1,8 @@
+{
+  "use_emoji": {
+    "description": "在结果中使用 emoji 表情",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后结果只保留纯文字。若你的客户端字体缺少 emoji 字形，表情会显示成方块，此时可以关掉这个开关。"
+  }
+}

@@ -1,5 +1,21 @@
-name: "astrbot_plugin_oufei_jianding"
-author: "Qwe(N)"
-desc: "一个用于鉴定用户今日欧非指数和悲剧指数的插件，可直接通过关键词触发，限制每日每个群/私聊一次，并随机添加表情。"
-version: "1.0.0"
-repo_url: "https://github.com/10XuQ/astrbot_plugin_oufei_jianding"
+name: astrbot_plugin_oufei_jianding
+display_name: 欧非鉴定
+short_desc: 发送「欧非鉴定」，随机鉴定你今天的运气指数与悲剧指数。
+desc: |
+  随机生成 0~1000 的今日运气指数与悲剧指数，并按指数高低随机配上一个表情。
+
+  使用方式：发送 `/欧非鉴定`（别名：`/欧非`、`/oufei`）。
+
+  特点：
+  - 每日一次，按人计算：同一个人在任一群聊或私聊鉴定过，当天在其他会话也不能再鉴定，无法换群刷分。
+  - 纯本地计算：不依赖任何第三方库、不调用大模型、无需配置 API Key，响应即时。
+  - 数据落盘可靠：记录以 JSON 存放在 data/plugin_data 目录，写入采用原子替换，更新或重装插件不会丢数据。
+  - 表情可选：可在插件配置中关闭 emoji，只保留纯文字输出。
+version: 1.1.0
+author: 10XuQ
+repo: https://github.com/10XuQ/astrbot_plugin_oufei_jianding
+astrbot_version: ">=4.9.2"
+tags:
+  - 娱乐
+  - 趣味
+  - 运势
